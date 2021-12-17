@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Preston | Get Your Time</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/small.css" rel="stylesheet">
+    <link href="./css/medium.css" rel="stylesheet">
+    <link href="./css/large.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+   
+    
+</head>
+
+<body onload="getToday()">
+    <header>
+        <picture>
+            <img src="./images/icon.png" alt="Get Your Time logo">
+        </picture>
+        <section class="headings">
+            <h1>Get Your Time</h1>
+            <div class="m">Beacause tomorrow could rain</div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776 MENU</button>
+
+        <ul id="menu" class="hide">
+            <li><a href="#">HOME</a></li>
+            <li class="active"><a href="preston-4.html">PRESTON</a></li>
+            <li><a href="#">SODA SPRINGS</a></li>
+            <li><a href="#">FISH HAVEN</a></li>
+            <li><a href="#">STORM CENTER</a></li>
+            <li><a href="#">GALLERY</a></li>
+        </ul>
+    </nav>
+    </nav>
+    <main>
+        <h1>Preston Idaho</h1>
+        <div class="topics">
+            <a href="#"><p>Hero w/weather summary</p></a>
+        </div>
+        <div class="topics">
+            <a href="#"><p>5 Day Forecast</p></a>
+        </div>
+        <div class="topics">
+            <a href="#"><p>Article</p></a>
+        </div>
+        <div class="topics">
+            <a href="#"><p>Contact Information</p></a>
+        </div>
+    </main>
+    <footer>
+        ©Get Your Time | Attributions | Helaman Ewerton <br>
+        <div id="time"></div><br>
+    </footer>
+     <script src="./js/script.js"></script>
+    
+   <script>
+function getToday() {
+  
+    var data = new Date();
+    
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    
+    var dayWeek = weekday[data.getDay()];
+    var day = data.getDay();
+    
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    var monthName = month[data.getMonth()];
+    
+    var year = data.getFullYear();
+    
+    let fullDate = dayWeek + ", " + day + " " + monthName + " " + year; 
+    
+    document.getElementById("time").innerHTML = fullDate;
+}
+</script>     
+    
+</body>
+
+</html>

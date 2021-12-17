@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    background-color: #3AACC6;
+}
+
+
+/*Typography*/
+
+h1 {
+    color: red;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 190%;
+}
+
+h2 {
+    color: #3AACC6;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+}
+
+p {
+    color: black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+
+/*Header*/
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.headings img {
+    width: 32%;
+    height: auto;
+    padding: 0;
+}
+
+.headings h1 {
+    padding: 0;
+    margin-top: -25%;
+    margin-left: 7rem;
+    margin-right: 0;
+}
+
+.headings h2 {
+    padding: 0;
+    margin-top: -10%;
+    margin-left: 34%;
+}
+
+
+/*Nav*/
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: .8rem 2%;
+}
+
+nav {
+    background-color: #3AACC6;
+    box-shadow: 0 2px 15px #3AACC6;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.active {
+    background-color: white;
+    color: #3AACC6;
+    box-shadow: 0 2px 15px #3AACC6;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    border-top: 1px solid rgb(0, 0, 0, 0.3);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: red;
+    box-shadow: 0 2px 15px #3AACC6;
+}
+
+nav ul.hide {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Main Structure*/
+
+.Hero,
+.Forecast,
+.Article,
+.Contact {
+    background-color: #FFEC5F;
+    margin: 4%;
+    padding: 1%;
+    border: dotted #3AACC6;
+}
+
+
+/*Footer*/
+
+footer {
+    padding: 2%;
+}
+
+footer p {
+    padding: 0;
+    color: white;
+    font-weight: bold;
+}
