@@ -1,47 +1,97 @@
-@media only screen and (min-width: 45rem) {
-    nav button {
-        display: none;
+@media only screen and (min-width: 32.5rem) {
+    /**********MENU*********/
+    body {
+        max-width: 100%;
     }
-    nav ul.hide {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+    .navigation {
         display: flex;
     }
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-    }
-    nav ul li {
+    .navigation li {
         display: block;
+        /* change state in small view */
         flex: 1 1 auto;
     }
-    nav ul li a {
-        display: block;
-        padding: .8rem 2%;
-        text-decoration: none;
+    .navigation a {
         text-align: center;
-        font-weight: bold;
-        color: white;
-        font-size: .9rem;
-        border: none;
+        padding: 10px;
     }
-    .headings h1 {
-        margin-left: 14rem;
+    .navigation li:first-child {
+        display: none;
     }
-    main {}
-    h1 {
-        font-size: 3.7rem;
+    header {
+        display: inline;
     }
-    h2 {
-        font-size: 2.7rem;
+    header img {
+        width: 350px;
+        margin: 4rem auto;
+        padding: 0;
     }
-    h3 {
-        font-size: 1rem;
+    /***********FOOTER*****************/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto
     }
-    p {
-        font-size: .7rem;
+    .address {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .social-media {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .social-media img {
+        margin-top: 4rem;
+    }
+    .pages {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    /*****MAIN SECTION************/
+    main {
+        width: 90%;
+        margin: auto;
+    }
+    .welcome {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+    .welcome h1 {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 10rem;
+    }
+    .welcome p {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 1rem;
+        margin-top: 15rem;
+    }
+    .welcome img {
+        grid-column: 2;
+        margin-top: 1rem;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+    .threedays {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    #day1 {
+        grid-column: 1;
+    }
+    #day2 {
+        grid-column: 2;
+    }
+    #day3 {
+        grid-column: 3;
     }
 }
